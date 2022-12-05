@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="스파르타코딩클럽">
-    <meta property="og:description" content="완주까지 함께 찐한 관리, 스파르타코딩클럽">
-    <meta property="og:image" content="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free_myprofile/%EC%8A%A4%ED%8C%8C%EB%A5%B4%ED%83%80%EB%A1%9C%EA%B3%A0.png">
-    <title>스파르타코딩클럽</title>
+    <meta property="og:title" content="분홍분홍한 르탄이">
+    <meta property="og:description" content="찐한관리 매니저 르탄입니다!">
+    <meta property="og:image" content="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free_myprofile/%EB%B3%B4%EB%9D%BC+%EB%A5%B4%ED%83%84%EC%9D%B4/%EB%B3%B4%EB%9D%BC%EB%A5%B4%ED%83%84_%ED%94%84%EB%A1%9C%ED%95%84.png">
+    <script type="text/javascript" src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free/sparta.js"></script>
+    <title>분홍 르탄이</title>
     <style>
         @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
         * {
             font-family: "Pretendard",serif;
         }
         body {
-            background: linear-gradient(180deg, #FFFCFD 0%, #FFE2E8 100%);
-            height: 100vh;
-          }
+            background-color:#FFD0DA;
+            background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free_myprofile/%EB%B6%84%ED%99%8D+%EB%A5%B4%ED%83%84%EC%9D%B4/%EB%B6%84%ED%99%8D%EB%B0%98%EC%A7%9D%EC%9D%B4.png');
+        }
         .profile {
-            width: 139px;
-            height: 71px;
-            background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free_myprofile/%EC%8A%A4%ED%8C%8C%EB%A5%B4%ED%83%80%EB%A1%9C%EA%B3%A0.png');
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border: 2px solid white;
+            background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free_myprofile/%EB%B3%B4%EB%9D%BC+%EB%A5%B4%ED%83%84%EC%9D%B4/%EB%B3%B4%EB%9D%BC%EB%A5%B4%ED%83%84_%ED%94%84%EB%A1%9C%ED%95%84.png');
             background-position: center;
+            background-size: cover;
         }
         .main {
             color : #000000;
-            font-size: 22px;
+            font-size: 18px;
             size : 20px;
             margin-top: 30px;
             margin-bottom: 10px;
@@ -49,10 +53,10 @@
         .bigbutton {
             width: 320px;
             height: 59px;
-            border-radius: 8px;
+            border-radius: 100px;
             background-color: white;
-            margin-bottom: 13px;
-            font-size: 15px;
+            margin-bottom: 16px;
+            font-size: 16px;
             font-weight: bold;
             color:#000000;
             display: flex;
@@ -60,60 +64,64 @@
             justify-content: center;
             align-items: center;
             text-decoration: none;
-            box-shadow: 0px 4px 16px rgba(232, 52, 78, 0.2);
+            box-shadow: 0px 2px 8px rgba(152, 151, 185, 0.24);
         }
-        .buttons > a {
-            width: 320px;
+        .minibutton {
+            width: 152px;
             height: 59px;
-            border-radius: 8px;
-            font-size: 15px;
+            border-radius: 100px;
+            background-color: white;
+            font-size: 16px;
             font-weight: bold;
+            color:#000000;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
             text-decoration: none;
-            box-shadow: 0px 4px 16px rgba(232, 52, 78, 0.2);
-            margin: 0px 8px 13px 8px;
+            box-shadow: 0px 2px 8px rgba(152, 151, 185, 0.24);
+            margin: 0px 8px 17px 8px;
         }
-        .dding {
-            background-color: #2B6E30;
-            color: #FFFFFF;
+        .buttons {
+            display: flex;
         }
-        .online {
-            background-color: #e8344e;
-            color:#FFFFFF;
+        .wrap > a:hover {
+            background-color: #f2f2f2;
         }
-        .hang {
-            background-color: #f50000;
-            color:#FFFFFF;
+        .buttons > a:hover {
+            background-color: #f2f2f2;
         }
-        .chang {
-            background-color: #0f16ae;
-            color:#FFFFFF;
+        .rtan {
+            width: 100px;
+            height: 170px;
+            background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free_myprofile/%EB%B3%B4%EB%9D%BC+%EB%A5%B4%ED%83%84%EC%9D%B4/%EC%95%89%EC%95%84%EC%9E%88%EB%8A%94%EB%A5%B4%ED%83%84.png');
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            bottom: 63px;
         }
-        .footer {
-            color: #333333;
-            font-weight: 500;
-            margin-top: 20px;
+        .pink {
+            width: 100%;
+            height: 95px;
+            background-color: #FF6C7A;
+            position : absolute;
+            bottom : 0;
+            
         }
     </style>
 </head>
 <body>
     <div class="wrap">
         <div class="profile"></div>
-        <h1 class="main">스파르타코딩클럽</h1>
-        <p class="sub">완주까지 함께 찐한 관리, 스파르타코딩클럽</p>
+        <h1 class="main">르탄이</h1>
+        <p class="sub">스파르타코딩클럽 주니어 개발자 르탄입니다.</p>
+        <a class="bigbutton"target="_blank" href="https://spartacodingclub.kr/online/special/bucketlist?utm_source=instagram&utm_medium=profile&utm_campaign=%EB%AC%B4%EB%A3%8C%ED%8A%B9%EA%B0%95&utm_content=%EC%83%81%EC%84%B8&utm_term=12%EC%9B%94%EC%9B%94%EA%B0%84%EC%BD%94%EB%94%A9_insta_%EB%A5%B4%ED%83%84%EC%9D%B4_221205">스파르타코딩클럽 홈페이지</a>
         <div class="buttons">
-            <a class="bigbutton"target="_blank" href="https://spartacodingclub.kr/online/special/bucketlist?utm_source=instagram&utm_medium=profile&utm_campaign=%EB%AC%B4%EB%A3%8C%ED%8A%B9%EA%B0%95&utm_content=%EC%83%81%EC%84%B8&utm_term=12%EC%9B%94%EC%9B%94%EA%B0%84%EC%BD%94%EB%94%A9_insta_221205">[무료특강] 12월 한정 월간코딩</a>
-            <a class="online"target="_blank" href="https://spartacodingclub.kr/?utm_source=instagram&utm_medium=profile&utm_campaign=%EC%98%A8%EB%9D%BC%EC%9D%B8&utm_content=%EB%A9%94%EC%9D%B8&utm_term=insta_spa_pro_221114">스파르타코딩클럽</a>
-            <a class="dding" target="_blank" href="https://spartacodingclub.kr/nb?utm_source=instagram&utm_medium=profile&utm_campaign=%EB%82%B4%EC%9D%BC%EB%B0%B0%EC%9B%80%EB%8B%A8&utm_content=%EB%A9%94%EC%9D%B8&utm_term=insta_spa_pro_221114">내일배움단 - 국비지원</a>
-            <a class="hang" target="_blank" href="https://hanghae99.spartacodingclub.kr/?utm_source=instagram&utm_medium=profile&utm_campaign=%ED%95%AD%ED%95%B4&utm_content=%EB%A9%94%EC%9D%B8&utm_term=insta_spa_pro_221114">항해99 - 99일만에 개발자로</a>
+            <a class="minibutton" target="_blank" href="https://www.instagram.com/iamrtanny/">인스타그램</a>
+            <a class="minibutton"target="_blank" href="https://spartacodingclub.kr/community/blog">블로그</a>
         </div>
-        <div class="buttons">
-            <a class="chang"target="_blank" href="https://chang.spartacodingclub.kr/?utm_source=instagram&utm_medium=profile&utm_campaign=%EC%B0%BD&utm_content=%EB%A9%94%EC%9D%B8&utm_term=insta_spa_pro_221114">{창} - IT 창업 부트캠프</a>
-        </div>
-        <div class="footer">@SpartaCodingClub</div>
+        <div class="pink"></div>
+        <div class="rtan"></div>
     </div>
 </body>
 </html>
